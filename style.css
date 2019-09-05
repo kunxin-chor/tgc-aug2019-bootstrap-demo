@@ -1,0 +1,28 @@
+#menu {
+    display:flex;
+    list-style:none;
+    justify-content:space-evenly;
+    background-color:grey;
+}
+
+#hero-image {
+    background-image:url(tools.jpg);
+    background-size:cover; /* try to fit the image to the size of the container */
+    background-position:center;
+    height:800px;
+    
+}
+
+/* child selector */
+/* All the <a> inside <li> inside #menu */
+#menu li a {
+   text-decoration: none;
+   color: white;
+   padding:8px;
+   display:block; /* must be block before can have padding */
+}    
+
+#menu li a:hover {
+    background-color: white;
+    color: black;
+}
